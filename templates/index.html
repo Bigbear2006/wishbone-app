@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Wishbone</title>
-    <link rel="stylesheet" type='text/css' href="{% static 'src/style/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'src/style/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'src/style/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'src/style/normalize.css' %}' %}">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,13 +16,13 @@
             <img class="logo" src="{% static 'src/assets/logo.svg' %}" alt="logo">
             <div class="header__menu">
                 <ul class="header__menu_ul">
-                    <li><a href="#featured-projects__content">Projects</a></li>
-                    <li><a href="#main__our_film our-film">About</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#main__our_team our-team">Team</a></li>
-                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#featured-projects__content">Проекты</a></li>
+                    <li><a href="#main__our_film our-film">О нас</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#main__our_team our-team">Команда</a></li>
+                    <li><a href="#footer">Контакты</a></li>
                 </ul>
-                <a class="header__button" href="#">Get template</a>
+                <a class="header__button" href="#">Заказать</a>
             </div>
         </div>
     </section>
@@ -30,10 +30,9 @@
         <div class="header__content">
             <h4 class="h4">Wishbone+Partners</h4>
             <h1 class="h1">The home of beautiful architecture.</h1>
-            <p class="p">Мы - архитектурная фирма, специализирующаяся на красивом, но функциональном дизайне. По сути,
-                мы считаем, что дизайн должен сочетать в себе удобство использования и доступность - это руководящие
-                принципы нашей
-                работы. Подробнее о наших предыдущих проектах, нашем процессе и нашей команде читайте ниже.</p>
+            <p class="p">Мы - архитектурная фирма, специализирующаяся на красивом и практичном дизайне. Мы считаем, что
+                дизайн должен сочетать в себе удобство использования и доступность - это руководящие принципы нашей
+                работы. Подробнее о наших предыдущих проектах, процессе работы и нашей команде читайте ниже.</p>
             <a class="about__a" href="#">Подробнее</a>
         </div>
         <img class="header__the_home_img" src="{% static 'src/assets/the_home_of_beautiful.svg' %}" alt="the_home_of_beautiful">
@@ -44,17 +43,16 @@
         <div id="main__our_film our-film" class="main__our_film our-film">
             <h2 class="h2">О нас</h2>
             <div class="our-film__content">
-                <p class="p">Мы на рынке уже 10 лет! Имеем боле 500+ довольных клиентов и не планируем останавливаться
+                <p class="p">Мы на рынке более 10 лет! Имеем более 500+ довольных клиентов и не планируем останавливаться
                     на этом.</p>
                 <p class="p">Терпеливая работа, сделанная с осторожностью, изображение за изображением, проект за
                     проектом, чтобы предложить вам идеальный инструмент для систематизации ваших знаний о современной
-                    архитектуре. Вместо быстрой, отвлекающей паутины нам нужна медленная, внимательная. Вместо наспех
-                    прочитанной информации мы предпочитаем спокойно усвоить знание.</p>
+                    архитектуре. Вместо наспех прочитанной информации мы предпочитаем спокойно усвоить знание.</p>
                 <div class="user-data">
                     <img class="icon" src="{% static 'src/assets/stephen.svg' %}" alt="icon">
                     <div class="user-name">
                         <p class="name">Stephen Collier</p>
-                        <p class="profession">Senior Partner</p>
+			<p class="profession">Директор</p>
                     </div>
                 </div>
             </div>
@@ -62,8 +60,8 @@
     </section>
     <div class="main__reeding_house reeding-house">
         <div class="reeding-house__content">
-            <h5 class="h5">Reeding House</h5>
-            <p class="p">Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet.</p>
+            <h5 class="h5">Уникальный дизайн</h5>
+            <p class="p">Каждый найдет в нем что-то свое</p>
         </div>
     </div>
     <div class="main__how_we_do how-we-do">
@@ -77,8 +75,8 @@
                     <div class="how-we-do__column">
                         <img class="how-we-do__img" src="{% static 'src/assets/Sketching-Icon.svg' %}" alt="sketching">
                         <p class="how-we-do__header">Макет</p>
-                        <p class="how-we-do__p">На начальном этапе поисходит проектировка проекта. Далее мы создаем
-                            макет, согласно плану.</p>
+                        <p class="how-we-do__p">На начальном этапе поисходит планирование и проработка проекта. Далее мы
+                            создаем макет, согласно плану.</p>
                     </div>
                     <div class="how-we-do__column">
                         <img class="how-we-do__img" src="{% static 'src/assets/Finalizing-Icon.svg' %}" alt="finalizing">
@@ -88,7 +86,7 @@
                     <div class="how-we-do__column">
                         <img class="how-we-do__img" src="{% static 'src/assets/Building-Icon.svg' %}" alt="building">
                         <p class="how-we-do__header">Строительство</p>
-                        <p class="how-we-do__p">Далее мы согласовыем всё со строительной компанией и передаем им всю
+                        <p class="how-we-do__p">Далее мы согласовываем всё со строительной компанией и передаем им всю
                             нужную информацию.</p>
                     </div>
                 </div>
@@ -98,7 +96,7 @@
     <div class="main__the_marble_staircase the-marble-staircase">
         <div class="the-marble-staircase__content">
             <h5 class="h5">Мраморная лестница</h5>
-            <p class="p">Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet.</p>
+            <p class="p">Может стать элементом роскоши для настоящих ценителей</p>
         </div>
     </div>
     <div class="main__happy_customers happy-customers">
@@ -106,7 +104,7 @@
             <div class="happy-customers__content">
                 <div class="happy-customers__main">
                     <h5 class="h5">Наши клиенты</h5>
-                    <h2 class="h2">Счастливые клиенты.</h2>
+                    <h2 class="h2">Счастливы.</h2>
                     <p class="p">Мы всегда учитываем желания и предпочтения клиента, стараемся, чтобы его видение было
                         максимально качественно реализовано нами.</p>
                 </div>
@@ -142,7 +140,7 @@
                                 <p class="card-2__p">Big Road Brewery</p>
                             </div>
                             <div class="card-2__button">
-                                <a class="featured-projects__button" href="#">Read more</a>
+                                <a class="featured-projects__button" href="#">Читать больше</a>
                             </div>
                         </div>
                     </div>
@@ -150,52 +148,51 @@
                          alt="featured_projects_3">
                 </div>
             </div>
-            <a class="featured-projects__a" href="#">View all projects</a>
+            <a class="featured-projects__a" href="#">Посмотреть все проекты</a>
         </section>
     </div>
     <div id="main__our_team our-team" class="main__our_team our-team">
         <section class="wrapper">
             <div class="our-team__content">
                 <div class="our-team__main">
-                    <h2 class="h2">Meet our team</h2>
+                    <h2 class="h2">Наша команда</h2>
                     <p class="p">В нашей компании работают профессиональные и квалифицированные работники. Отзывчивость,
                         позитив и усидчивость - главные черты наших сотрудников.</p>
-                    <a class="about__a" href="#">See team</a>
                 </div>
                 <div class="our-team__colleagues">
                     <div class="user-data">
                         <img class="icon" src="{% static 'src/assets/stephen.svg' %}" alt="icon">
                         <div class="user-name">
                             <p class="name">Stephen Collier</p>
-                            <p class="profession">Senior Partner</p>
+                            <p class="profession">Директор</p>
                         </div>
                     </div>
                     <div class="user-data">
                         <img class="icon" src="{% static 'src/assets/nolan.svg' %}" alt="icon">
                         <div class="user-name">
                             <p class="name">Nolan Peters</p>
-                            <p class="profession">Associate</p>
+                            <p class="profession">Проектировщик</p>
                         </div>
                     </div>
                     <div class="user-data">
                         <img class="icon" src="{% static 'src/assets/ferris.svg' %}" alt="icon">
                         <div class="user-name">
                             <p class="name">Ferris Wonder</p>
-                            <p class="profession">Associate Partner</p>
+                            <p class="profession">Дизайнер</p>
                         </div>
                     </div>
                     <div class="user-data">
                         <img class="icon" src="{% static 'src/assets/aria.svg' %}" alt="icon">
                         <div class="user-name">
                             <p class="name">Aria Stone</p>
-                            <p class="profession">Senior Partner</p>
+                            <p class="profession">Бухгалтер</p>
                         </div>
                     </div>
                     <div class="user-data">
                         <img class="icon" src="{% static 'src/assets/niko.svg' %}" alt="icon">
                         <div class="user-name">
                             <p class="name">Niko Ferry</p>
-                            <p class="profession">Partner</p>
+                            <p class="profession">Менеджер</p>
                         </div>
                     </div>
                 </div>
@@ -206,10 +203,10 @@
         <section class="wrapper">
             <div class="get-in-touch__content">
                 <div class="get-in-touch__main">
-                    <h5 class="h5">Get in touch</h5>
+                    <h5 class="h5">Связаться с нами</h5>
                     <h2 class="h2">Желаете заказать свой будущий поект?</h2>
                 </div>
-                <a class="about__a" href="#">Get in touch</a>
+                <a class="about__a" href="#">Связаться с нами</a>
             </div>
         </section>
     </div>
@@ -230,6 +227,6 @@
         </div>
     </section>
 </footer>
-<script src="src/source.js"></script>
+<script src="{% static 'src/source.js' %}"></script>
 </body>
 </html>
